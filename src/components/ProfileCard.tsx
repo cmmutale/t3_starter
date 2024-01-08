@@ -20,10 +20,12 @@ async function ProfileCard() {
                 <CardContent>
                     <p>{user?.name}</p>
                     <p>{user?.email}</p>
-                    <img
-                        className='w-16 aspect-square rounded-full'
+                    {/* <Image
+                        width={54}
+                        height={54}
                         src={user?.image}
-                        alt="profile picture" />
+                        alt={user?.name}
+                    /> */}
                 </CardContent>
             </Card>
         </div>

@@ -2,11 +2,9 @@
 import React from 'react'
 import Link from 'next/link'
 import { useSession } from 'next-auth/react'
-import Logout from '@/app/auth/_components/Logout';
 import AppDrawer from './AppDrawer';
 import { usePathname } from 'next/navigation';
-import { Button } from './ui/button';
-import { LucideUser } from 'lucide-react';
+import UserButton from './UserButton';
 
 function AppBar() {
     const { data: session } = useSession();
@@ -22,16 +20,16 @@ function AppBar() {
     const AppTitle = capitalizeFirstLetter(removeFirstCharacter(pathname));
     return (
         <header className='h-[60px] shadow-sm bg-white'>
-            <div className='flex items-center justify-between h-full max-w-3xl mx-auto max-md:px-2'>
+            <div className='flex items-center justify-between h-full max-w-3xl mx-auto max-md:px-2 gap-2'>
                 <div className='AppDrawer'>
                     <AppDrawer />
                 </div>
-                <div className="AppTitle font-semibold text-2xl">
+                <div className="AppTitle font-semibold text-2xl grow text-center">
                     <p>{AppTitle}</p>
                 </div>
                 <div className='AppAction'>
                     {
-                        session ? <Button size='icon'><LucideUser /></Button> : <Link href='/auth/login'>Login</Link>
+                        session ? <UserButton /> : <Link href='/auth/login'>Login</Link>
                     }
                 </div>
             </div>
