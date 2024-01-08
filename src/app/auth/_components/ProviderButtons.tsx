@@ -17,7 +17,7 @@ export default function ProviderButtons() {
         <div className='flex flex-col gap-4'>
             <button
                 className='bg-[#5865F2] text-white rounded-md px-4 py-2'
-                onClick={() => signIn('discord', {
+                onClick={async () => await signIn('discord', {
                     callbackUrl: '/dashboard',
                 })}>
                 Sign in with Discord
@@ -25,7 +25,7 @@ export default function ProviderButtons() {
             <button
                 // style with github colors
                 className='bg-[#333333] text-white rounded-md px-4 py-2'
-                onClick={() => signIn('github', {
+                onClick={async () => await signIn('github', {
                     callbackUrl: '/dashboard',
                 })}>
                 Sign in with Github
@@ -33,7 +33,7 @@ export default function ProviderButtons() {
             <button
                 // style with google colors
                 className='bg-[#EA4335] text-white rounded-md px-4 py-2'
-                onClick={() => signIn('google', {
+                onClick={async () => await signIn('google', {
                     callbackUrl: '/dashboard',
                 })}>
                 Sign in with Google
