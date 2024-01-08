@@ -2,13 +2,12 @@ import "@/styles/globals.css";
 import UserSession from "@/components/UserSession";
 import { Toaster } from '@/components/ui/toaster';
 
-import { Inter, Rubik } from "next/font/google";
-import AppBar from "@/components/AppBar";
+import { Rubik } from "next/font/google";
 
-const inter = Inter({
-    subsets: ["latin"],
-    variable: "--font-sans",
-});
+// const inter = Inter({
+//     subsets: ["latin"],
+//     variable: "--font-sans",
+// });
 
 const rubik = Rubik({
     subsets: ["latin"],
