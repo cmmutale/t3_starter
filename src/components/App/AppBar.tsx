@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useSession } from 'next-auth/react'
 import AppDrawer from './AppDrawer';
 import { usePathname } from 'next/navigation';
-import UserButton from './UserButton';
+import UserButton from '../UserButton';
 
 function AppBar() {
     const { data: session } = useSession();

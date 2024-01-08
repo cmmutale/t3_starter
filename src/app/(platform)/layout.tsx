@@ -2,7 +2,7 @@
 import React from 'react'
 import { useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
-import AppBar from '@/components/AppBar';
+import AppBar from '@/components/App/AppBar';
 
 interface PlatformLayoutProps {
     children: React.ReactNode;

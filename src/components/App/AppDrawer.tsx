@@ -3,7 +3,6 @@ import {
     Sheet,
     SheetClose,
     SheetContent,
-    SheetDescription,
     SheetFooter,
     SheetHeader,
     SheetTitle,
@@ -11,7 +10,6 @@ import {
 } from "@/components/ui/sheet"
 import { LucideMenu } from 'lucide-react'
 import Link from 'next/link'
-import { Button } from './ui/button'
 import Logout from '@/app/auth/_components/Logout'
 
 const AppMenu = [
